@@ -1,0 +1,39 @@
+@use "../abstracts/variables" as *;
+
+.form-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forms {
+  background-color: $clr-red-400;
+  padding: $size-700;
+  color: $clr-white;
+  font-family: $ff-secondary;
+  border-radius: $size-600;
+  box-shadow: 0 1px 5px rgba($clr-gray-800, $alpha: 1.0);
+
+  input {
+    border-radius: 10px;
+  }
+
+  a {
+    color: $clr-white;
+  }
+}
+
+.btn-submit {
+  background: $clr-blue-800;
+  color: $clr-white;
+  min-width: $size-900;
+}
+
+.alert {
+  font-family: $ff-primary;
+  padding: $size-500;
+  font-size: $fs-650;
+  font-weight: $fw-semi-bold;
+  text-align: center;
+}
