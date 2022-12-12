@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block head_title %}{{user}}{% endblock head_title %}
+
+{% block content %}
+<div class="mt-5">
+  <h2>Journalist: {{user}}</h2>
+  <h3>Articles</h3>
+  <p>DIO {{user.arlicle.all}}</p>
+
+
+</div>
+{% endblock content %}

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block head_title %}New-Post{% endblock head_title %}
+
+{% block content %}
+  <div class="mt-5">
+    <form class="d-flex" role="search" action="{% url 'search' %}">
+      <input name="q" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-primary" type="submit">Search</button>
+    </form>
+  </div>
+  <div class="mt-5 text-center">
+    <h3>List Id</h3>
+    <ul>
+      {% for post in article %}
+      <li style="list-style: none;">{{post.transaction_id}}</li>
+     {% endfor %}
+    </ul>
+  </div>
+
+{% endblock content %}

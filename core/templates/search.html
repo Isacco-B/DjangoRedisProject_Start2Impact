@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block head_title %}Search{% endblock head_title %}
+
+{% block content %}
+<div class="mt-5">
+  <h3>Search Result</h3>
+
+  {% for art in article %}
+  <p>{{art.title}}</p>
+  <p>{{art.text}}</p>
+  <p>{{art.author}}</p>
+  <p>{{art.transaction_id}}</p>
+  {% endfor %}
+
+</div>
+{% endblock content %}
